@@ -1,0 +1,12 @@
+function formatString(input: string, toUpper?: boolean): string {
+    if (toUpper== null || toUpper==true) {
+        return input.toUpperCase()
+    }
+    else{
+        return input.toLocaleLowerCase()
+    }
+}
+
+function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]{
+    return items.filter(item => item.rating >=4)
+}
